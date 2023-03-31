@@ -34,13 +34,5 @@ export class AppComponent {
     }
   
 
-  stopRobotAnimation() {
-    const robot = document.querySelector('.robot');
-    robot.addEventListener('mouseover', function() {
-      this.classList.add('stop');
-    });
-    robot.addEventListener('mouseleave', function() {
-      this.classList.remove('stop');
-    });
-  }
+ 
 }
