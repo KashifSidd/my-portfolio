@@ -1,0 +1,56 @@
+ /* Custom style for card */
+ .card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  } 
+  
+  .card:hover .card-title {
+    color: #007bff;
+    
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Custom style for My Work section */
+  #my-work {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  #my-work h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    #my-work h1 {
+      font-size: 36px;
+    }
+    
+    .card {
+      margin-bottom: 30px;
+    }
+  }

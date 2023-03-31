@@ -32,6 +32,9 @@ export class AppComponent {
       styleElement.innerHTML = style;
       this.renderer.appendChild(document.head, styleElement);
     }
+
+    
+  
   
 
  
