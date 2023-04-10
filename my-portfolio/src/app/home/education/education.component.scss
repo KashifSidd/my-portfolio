@@ -1,48 +1,129 @@
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$bg-color: #f8f9fa;
+#education {
+  background-color: #e1e1e1;
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+      padding: 1rem;
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-subtitle {
+        color: #6c757d;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-text {
+        color: #6c757d;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
   }
 
-  .card-body {
-    padding: 1rem;
-  }
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+    .row {
+      margin-top: 2rem;
+      justify-content: center;
 
-  .card-text {
-    color: $secondary-color;
-    font-size: 1rem;
-    margin-bottom: 0;
+      .col-md-6 {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
 
-.container {
-  background-color: $bg-color;
-  padding: 2rem;
-
-  .row {
-    margin-top: 2rem;
-
-    .col-md-4 {
+@media only screen and (max-width: 767px) {
+  #education {
+    .card {
       margin-bottom: 2rem;
 
-      &:nth-child(2n) {
-        .card {
-          border-left: 4px solid $primary-color;
+      .card-body {
+        .card-title {
+          font-size: 1.2rem;
+        }
+        .card-subtitle {
+          font-size: 0.8rem;
+        }
+        .card-text {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #education {
+    .card {
+      margin-bottom: 2rem;
+
+      .card-body {
+        .card-title {
+          font-size: 1.3rem;
+        }
+        .card-subtitle {
+          font-size: 0.9rem;
+        }
+        .card-text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #education {
+    .card {
+      margin-bottom: 2rem;
+
+      .card-body {
+        .card-title {
+          font-size: 1.4rem;
+        }
+        .card-subtitle {
+          font-size: 1rem;
+        }
+        .card-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #education {
+    .card {
+      margin-bottom: 2rem;
+
+      .card-body {
+        .card-title {
+          font-size: 1.5rem;
+        }
+        .card-subtitle {
+          font-size: 1.1rem;
+        }
+        .card-text {
+          font-size: 1.1rem;
         }
       }
     }

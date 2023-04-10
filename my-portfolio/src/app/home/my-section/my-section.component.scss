@@ -31,6 +31,7 @@
 
   #header-carousel .carousel-item img {
     height: 300px; /* set a fixed height for the carousel container */
-    object-fit: cover; /* adjust the images to fit the container */
+    object-fit: cover;
+    border-radius: 15px; /* adjust the images to fit the container */
   }
   
