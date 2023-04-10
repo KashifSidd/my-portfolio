@@ -1,0 +1,50 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$bg-color: #f8f9fa;
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    color: $secondary-color;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.container {
+  background-color: $bg-color;
+  padding: 2rem;
+
+  .row {
+    margin-top: 2rem;
+
+    .col-md-4 {
+      margin-bottom: 2rem;
+
+      &:nth-child(2n) {
+        .card {
+          border-left: 4px solid $primary-color;
+        }
+      }
+    }
+  }
+}

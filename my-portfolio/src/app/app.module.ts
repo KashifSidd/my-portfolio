@@ -13,6 +13,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { BallCursorComponent } from './home/ball-cursor/ball-cursor.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { EducationComponent } from './home/education/education.component';
 
 
 
@@ -26,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
     MySkillsComponent,
     FooterComponent,
     BallCursorComponent,
+    EducationComponent,
     
     
   ],
