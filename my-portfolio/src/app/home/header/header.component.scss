@@ -6,8 +6,79 @@
   }
   
   .navbar-heading {
-    position: relative; // set position to relative
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
   }
+  
+  .navbar-heading span {
+    display: inline-block;
+    animation-name: crackUp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes crackUp {
+    0% { transform: scale(1, 1); }
+    50% { transform: scale(1.2, 0.7); }
+    100% { transform: scale(1, 1); }
+  }
+  
+  .navbar-heading span:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+  
+  .navbar-heading span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .navbar-heading span:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+  
+  /* and so on... */
+  
+  /* add dancing effect to each letter */
+  .navbar-heading span {
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* add hover effect to each letter */
+  .navbar-heading span:hover {
+    animation-name: rotateAndColor;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes rotateAndColor {
+    0% {
+      transform: rotate(0deg);
+      color: inherit;
+    }
+    50% {
+      transform: rotate(360deg);
+      color: #ffc107; /* change to desired hover color */
+    }
+    100% {
+      transform: rotate(0deg);
+      color: inherit;
+    }
+  }
+  
+  
+  
   .social-icons img {
     width: 30px;
     height: 30px;
@@ -16,7 +87,7 @@
   }
   
   .ball {
-    position: absolute;
+    position: absolute ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
